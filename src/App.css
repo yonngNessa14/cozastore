@@ -7,6 +7,7 @@
 }
 
 body {
+  scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: Poppins;
   /* background-color: red; */
@@ -24,24 +25,6 @@ h1 {
   /* color: rgba(182, 21, 21, 0.815); */
 }
 
-.img-container {
-  /* border: none; */
-  padding: 10px;
-  transition: all .5s;
-}
-
-.product-img {
-  display: block;
-  transition: all .2s;
-}
-
-.product-img:hover {
-  transform: scale(1.05);
-  z-index: 20;
-}
-.img-container:hover .product-img:not(:hover) {
-  transform: scale(0.95);
-}
 
 .header--main {
   /* font-weight: bold; */

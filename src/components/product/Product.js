@@ -4,26 +4,21 @@ import { Link } from 'react-router-dom';
 
 const product = (props) => {
         return (
-            <React.Fragment>
-                <ContWrapper data-aos="slide-up" data-aos-duration="1000" className="col-10 col-md-4 col-lg-3 img-container">
-                    <Link to={`/products/${props.id}`}>
-                        <div className="card">
+            <ContWrapper data-aos="slide-up" data-aos-duration="1000" className="col-10 col-md-4 col-lg-3">
+                
+                <div className="card">
+                    <div className="img-container">
+                        <Link to={`/products/${props.id}`}>
                             <img className="card-img-top product-img" src={props.img} alt="test" />
-                            <div className="card-body">
-                                <div className="d-flex justify-content-between">
-                                    <h5>{props.title}</h5>
-                                </div>
-                                <p>{props.price}</p>
-                            </div>
-                        </div>
-                    </Link>
-                </ContWrapper>
-                    {/* <div className="row">
-                        <div className="col-1 col-md-1 col-lg-1 mx-auto">
-                            <button className="text-center">Show more</button>
-                        </div>
-                    </div> */}
-            </React.Fragment>
+                        </Link>
+                    </div>
+                    <div className="card-footer d-flex justify-content-between">
+                        {/* <h5>{props.title}</h5> */}
+                        <h5 className='text-capitalize title'>this is the title</h5>
+                    </div>
+                </div>
+               
+            </ContWrapper>
         );
 }
 
@@ -45,5 +40,33 @@ const ContWrapper = Styled.div`
 
     .card {
         margin-bottom: 10px;
+
+        .title {
+            text-decoration: none !important;
+            color: #000 !important;
+        }
+
+        &:hover{
+            .card{
+                border: 0.1rem solid rgba(0,0,0,0.2);
+                box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+            }
+            .card-footer{
+                background: #7B7A76
+            }
+        }
+
+        .img-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .img-container:hover .product-img {
+            transform: scale(1.1);
+        }
+
+        .product-img {
+            transition: all .5s linear
+        }
     }
 `;

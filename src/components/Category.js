@@ -11,7 +11,7 @@ const category = () => {
                             <div className="row">
                                 <div className="col-10 col-md-6 col-lg-4 mx-auto cart-content" onClick={(women) => { value.handleCat(); }}>
                                     <div className="over-lay"></div>
-                                    <div className="cart-women cart-1 cart">
+                                    <div className="cart-women cart-1 cart p-3">
                                         <h2>Women</h2>
                                         <p>Spring 2019</p>
                                     </div>
@@ -19,7 +19,7 @@ const category = () => {
 
                                 <div className="col-10 col-md-6 col-lg-4 mx-auto cart-content">
                                     <div className="over-lay"></div>
-                                    <div className="cart-men cart-2 cart">
+                                    <div className="cart-men cart-2 cart p-3">
                                         <h2>Men</h2>
                                         <p>Spring 2019</p>
                                     </div>
@@ -27,7 +27,7 @@ const category = () => {
 
                                 <div className="col-10 col-md-6 col-lg-4 mx-auto cart-content">
                                     <div className="over-lay"></div>
-                                    <div className="cart-access cart-3 cart">
+                                    <div className="cart-access cart-3 cart p-3">
                                         <h2>Accessories</h2>
                                         <p> New Trend</p>
                                     </div>

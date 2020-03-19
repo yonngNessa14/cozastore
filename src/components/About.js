@@ -69,7 +69,9 @@ export default about;
 
 const AboutWrapper = Styled.div`
     margin-top: 7.3em;
-
+    p {
+        font-size: 20px;
+    }
     .about__text-box {
         position: absolute;
         top: 50%;

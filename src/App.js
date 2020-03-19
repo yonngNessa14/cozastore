@@ -12,8 +12,6 @@ import HomePage from './pages/HomePage';
 export default class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        {/* THIS IS ONLY TO LOAD ALL PAGES */}
         <Router>  
           <NavBar />
           <Switch>
@@ -25,8 +23,6 @@ export default class App extends Component {
           </Switch>
           {/* <Modal /> */}
         </Router>
-        
-      </React.Fragment>
     );
   }
 }
