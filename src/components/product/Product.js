@@ -40,6 +40,9 @@ const ContWrapper = Styled.div`
 
     .card {
         margin-bottom: 10px;
+        .title {
+            font-size: 20px !important;
+        }
 
         .title {
             text-decoration: none !important;
